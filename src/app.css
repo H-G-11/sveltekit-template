@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-title {
+  font-family: Figtree, Noto Sans JP, Noto Sans, sans-serif;
+}
+
+.apexcharts-canvas .apexcharts-xaxistooltip {
+  border: 0;
+  color: "--p";
+  /* boxShadow: theme.customShadows.dropdown;
+      borderRadius: Number(theme.shape.borderRadius) * 1.5; */
+  &:before {
+    border-bottom-color: "transparent";
+  }
+}
+
+.apexcharts-canvas .apexcharts-xaxistooltip &:before {
+  border-bottom-color: "transparent";
+}
+
+.apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light {
+  border: 0;
+  /* boxShadow: theme.customShadows.dropdown;
+      borderRadius: Number(theme.shape.borderRadius) * 1.5; */
+  .apexcharts-tooltip-title {
+    border: 0;
+    text-align: "center";
+    /* fontWeight: theme.typography.fontWeightBold;
+        backgroundColor: alpha(theme.palette.grey[500]; 0.16); */
+    /* color: theme.palette.text[theme.palette.mode === 'light' ? 'secondary' : 'primary']; */
+  }
+}
+
+.apexcharts-canvas
+  .apexcharts-tooltip.apexcharts-theme-light
+  .apexcharts-tooltip-title {
+  border: 0;
+  text-align: "center";
+  /* fontWeight: theme.typography.fontWeightBold;
+        backgroundColor: alpha(theme.palette.grey[500]; 0.16); */
+  /* color: theme.palette.text[theme.palette.mode === 'light' ? 'secondary' : 'primary']; */
+}
+
+.apexcharts-canvas .apexcharts-legend-series {
+  display: "flex !important";
+  align-items: "center";
+}
+.apexcharts-canvas .apexcharts-legend-marker {
+  margin-right: 8;
+}
+.apexcharts-canvas .apexcharts-legend-text {
+  line-height: "18px";
+  text-transform: "capitalize";
+}
