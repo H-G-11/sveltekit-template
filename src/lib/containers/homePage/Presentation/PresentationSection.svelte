@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex flex-col max-h-screen xl:flex-row h-5/6 relative">
-  <div class="-top-16 left-0 absolute h-full w-full">
+  <div class="-top-16 left-0 absolute h-full w-full hidden md:block">
     <Blurry1 />
   </div>
   <!-- <div class="top-0 left-0 absolute">

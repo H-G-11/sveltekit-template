@@ -17,10 +17,15 @@
   } from "$lib/containers/homeDashboard/Stats";
 
   import { t } from "$lib/locales/i18n";
+  import { onDestroy } from "svelte";
+  import { fade } from "svelte/transition";
+
+  onDestroy(() => console.log("destroyed"));
 </script>
 
 <div
   class="space-y-4 m-4 p-4 sm:grid sm:space-y-0 sm:grid-cols-1 sm:gap-4 xl:grid-cols-3 xl:gap-8"
+  out:fade={{ duration: 0 }}
 >
   <div class="card sm:col-span-1"><HomeCard /></div>
   <div class="card sm:col-span-1"><DashboardSelect /></div>

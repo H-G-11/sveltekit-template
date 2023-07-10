@@ -5,7 +5,7 @@
 <div class="hero h-full bg-transparent relative pb-16">
   <div class="hero-content text-center xl:text-left">
     <div
-      class="max-w-lg flex flex-col font-barlow gap-4 justify-items-center items-center xl:justify-items-start xl:items-start"
+      class="max-w-lg flex flex-col font-barlow gap-4 justify-center items-center xl:justify-start xl:items-start"
     >
       <h1 class="sub-title">Build Fast and Reliable Applications in</h1>
       <h1 class="main-title">o(1) Time</h1>
@@ -13,7 +13,9 @@
         For start-ups, small teams and freelancers who want <br /> speed of
         development, professional applications, <br /> and state-of-the-art tooling.
       </p>
-      <div class="flex flex-row gap-2 w-full">
+      <div
+        class="flex flex-row gap-2 w-full justify-center items-center xl:justify-start xl:items-start"
+      >
         <div class="rating">
           <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
           <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
