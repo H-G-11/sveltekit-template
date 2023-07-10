@@ -8,7 +8,9 @@ Svelte Website + Dashboard template with Daisy UI.
    You will first need an Auth0 account. Then, you will have to:
 
 - create a new Application (standard one)
-  - allow the following redirect uri: http://localhost:4040
+  - allow the following redirect uri: http://localhost:4040, https://your-deployment, http://localhost:4040/callback/auth, https://your-deployment/callback/auth
+  - allow the following web origins and logout urls: http://localhost:4040, https://your-deployment
+  - (remove the localhosts in your production API, this gives steps mainly for a local server)
 - create a new API
 - create a `.env` file with the following variables:
   - `AUTH0_DOMAIN`
@@ -28,3 +30,4 @@ You will also need to define a secret for your app, so that it can use Auth.js.
    You can run `npm run dev`
 
 4. Deploy
+   I am using Vercel but anything is fine obviously :)
