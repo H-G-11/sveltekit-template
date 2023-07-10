@@ -17,7 +17,6 @@
   function scaleAccordingToSize() {
     scaleFactor = window.innerWidth / 1300;
     height = scaleFactor * 720;
-    console.log({ scaleFactor, height });
   }
 
   onMount(() => {
