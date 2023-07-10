@@ -21,7 +21,7 @@ Svelte Website + Dashboard template with Daisy UI.
 
 You will also need to define a secret for your app, so that it can use Auth.js.
 
-- `AUTH_SECRET` must also be defined
+- `AUTH_SECRET` must also be defined. You can create one using: `openssl rand -base64 32`
 
 2. Install
    You can now run `npm i`
