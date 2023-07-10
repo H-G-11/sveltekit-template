@@ -20,21 +20,19 @@ export default function apexchartsStylesFromTheme(
     fontWeight: 700,
     lineHeight: 2.5,
   }
+  const colors = [
+    theme?.colors?.primary,
+    theme?.colors?.warning,
+    theme?.colors?.info,
+    theme?.colors?.error,
+    theme?.colors?.success,
+    theme?.colors?.["warning-content"],
+    theme?.colors?.["success-content"],
+    theme?.colors?.["info-content"],
+    theme?.colors?.["primary-content"],
+  ].filter((c) => typeof c !== "undefined")
 
-  const baseOptions = {
-    // theme
-    colors: [
-      theme?.colors?.primary,
-      theme?.colors?.warning,
-      theme?.colors?.info,
-      theme?.colors?.error,
-      theme?.colors?.success,
-      theme?.colors?.["warning-content"],
-      theme?.colors?.["success-content"],
-      theme?.colors?.["info-content"],
-      theme?.colors?.["primary-content"],
-    ],
-
+  const baseOptions: any = {
     // Chart
     chart: {
       toolbar: { show: false },
@@ -199,6 +197,8 @@ export default function apexchartsStylesFromTheme(
       },
     ],
   }
-
+  if (colors.length) {
+    baseOptions["colors"] = colors
+  }
   return merge(baseOptions, options)
 }

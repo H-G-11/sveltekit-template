@@ -8,6 +8,7 @@ Svelte Website + Dashboard template with Daisy UI.
    You will first need an Auth0 account. Then, you will have to:
 
 - create a new Application (standard one)
+  - allow the following redirect uri: http://localhost:4040
 - create a new API
 - create a `.env` file with the following variables:
   - `AUTH0_DOMAIN`
