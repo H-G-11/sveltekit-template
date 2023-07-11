@@ -17,11 +17,32 @@
         class="flex flex-row gap-2 w-full justify-center items-center xl:justify-start xl:items-start"
       >
         <div class="rating">
-          <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
-          <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
-          <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
-          <input type="radio" class="mask mask-star-2 bg-[#faaf00]" />
-          <input type="radio" class="mask mask-star-2 bg-[#faaf00]" checked />
+          <input
+            type="radio"
+            class="mask mask-star-2 bg-[#faaf00]"
+            aria-label="first star"
+          />
+          <input
+            type="radio"
+            class="mask mask-star-2 bg-[#faaf00]"
+            aria-label="second star"
+          />
+          <input
+            type="radio"
+            class="mask mask-star-2 bg-[#faaf00]"
+            aria-label="third star"
+          />
+          <input
+            type="radio"
+            class="mask mask-star-2 bg-[#faaf00]"
+            aria-label="fourth star"
+          />
+          <input
+            type="radio"
+            class="mask mask-star-2 bg-[#faaf00]"
+            aria-label="fifth star"
+            checked
+          />
         </div>
         <div class="text-sm">
           <span class="font-bold"> 4.95/5</span>

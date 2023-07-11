@@ -21,7 +21,13 @@
 </script>
 
 <div class="drawer h-full" class:lg:drawer-open={$page.url.pathname !== "/"}>
-  <input id="drawer" type="checkbox" class="drawer-toggle" bind:checked />
+  <input
+    id="drawer"
+    type="checkbox"
+    class="drawer-toggle"
+    bind:checked
+    aria-label="drawer toggle"
+  />
   <div class="drawer-content">
     <div
       class="
@@ -38,7 +44,7 @@
     </div>
   </div>
   <div class="drawer-side z-40">
-    <label for="drawer" class="drawer-overlay" />
+    <label for="drawer" class="drawer-overlay" aria-label="drawer overlay" />
     <aside class="w-80 flex flex-col h-full bg-base-100">
       <div
         class="sticky top-0 z-20 hidden items-center gap-2 px-4 py-2 backdrop-blur lg:flex"
