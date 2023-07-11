@@ -9,6 +9,7 @@
   import Tailwind from "$lib/assets/logos/Tailwind.svelte";
   import Hexagon from "$lib/assets/shapes/Hexagon.svelte";
   import { onDestroy, onMount } from "svelte";
+  import { fly } from "svelte/transition";
 
   let resizeListener: any;
   let scaleFactor: number = 1;
@@ -32,7 +33,10 @@
 
 <!-- absolute  -->
 <div class="relative w-full overflow-hidden h-1/2 mt-16">
-  <div class="flex flex-col items-center">
+  <div
+    class="flex flex-col items-center"
+    transition:fly|local={{ y: 200, duration: 500 }}
+  >
     <div class="w-full text-center font-barlow">
       <h1 class="sub-title">The Technologies You Love</h1>
       <p class="mt-8">

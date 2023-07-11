@@ -1,7 +1,5 @@
 <script>
-  import BlobPrimary from "$lib/assets/backgrounds/BlobPrimary.svelte";
-  import BlobSecondary from "$lib/assets/backgrounds/BlobSecondary.svelte";
-  import MovingImages from "./MovingImages.svelte";
+  import { blur } from "svelte/transition";
   import HomeHero from "./HomeHero.svelte";
   import Blurry1 from "$lib/assets/backgrounds/Blurry1.svelte";
 </script>
@@ -10,13 +8,7 @@
   <div class="-top-16 left-0 absolute h-full w-full hidden md:block">
     <Blurry1 />
   </div>
-  <!-- <div class="top-0 left-0 absolute">
-    <BlobPrimary />
-  </div>
-  <div class="top-1/2 right-0 absolute -translate-y-96 hidden 2xl:block">
-    <BlobSecondary />
-  </div> -->
-  <div class="h-full xl:w-2/5">
+  <div class="h-full xl:w-2/5" transition:blur|local={{ duration: 500 }}>
     <HomeHero />
   </div>
 

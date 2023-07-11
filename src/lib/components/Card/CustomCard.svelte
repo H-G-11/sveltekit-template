@@ -11,7 +11,7 @@
 {#if visible}
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div
-    out:fly={{ y: -200, duration: 500 }}
+    out:fly|local={{ y: -200, duration: 500 }}
     in:fly={{ y: -200, duration: 500 }}
     on:click={() => (visible = false)}
     class="flex flex-col-reverse rounded-xl h-full w-full bg-cover prose p-3 pb-0 cursor-pointer"

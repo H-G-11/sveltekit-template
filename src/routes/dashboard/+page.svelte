@@ -13,36 +13,77 @@
     DownloadsStat,
     UserStat,
     VisitStats,
-    SalesStat,
   } from "$lib/containers/homeDashboard/Stats";
 
   import { t } from "$lib/locales/i18n";
   import { onDestroy } from "svelte";
-  import { fade } from "svelte/transition";
+  import { fly } from "svelte/transition";
 
   onDestroy(() => console.log("destroyed"));
 </script>
 
 <div
   class="space-y-4 m-4 p-4 sm:grid sm:space-y-0 sm:grid-cols-1 sm:gap-4 xl:grid-cols-3 xl:gap-8"
-  out:fade={{ duration: 0 }}
 >
-  <div class="card sm:col-span-1"><HomeCard /></div>
-  <div class="card sm:col-span-1"><DashboardSelect /></div>
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ y: -200, duration: 500 }}
+  >
+    <HomeCard />
+  </div>
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ x: -200, duration: 500 }}
+  >
+    <DashboardSelect />
+  </div>
   <div class="card sm:col-span-1 h-52"><Awards /></div>
-  <div class="card sm:col-span-1"><UserStat /></div>
-  <div class="card sm:col-span-1"><VisitStats /></div>
-  <div class="card sm:col-span-1"><DownloadsStat /></div>
-  <!-- <div class="card sm:col-span-1"><SalesStat /></div> -->
-  <div class="card sm:col-span-1 xl:col-span-2">
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ x: 200, duration: 500 }}
+  >
+    <UserStat />
+  </div>
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ y: 200, duration: 500 }}
+  >
+    <VisitStats />
+  </div>
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ y: -200, duration: 500 }}
+  >
+    <DownloadsStat />
+  </div>
+  <div
+    class="card sm:col-span-1 xl:col-span-2"
+    transition:fly|local={{ x: -200, duration: 500 }}
+  >
     <Sales />
   </div>
-  <div class="card sm:col-span-1"><SalesByPlan /></div>
-  <div class="card sm:col-span-1"><OsBreakdown /></div>
-  <div class="card sm:col-span-1 xl:col-span-2">
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ x: 200, duration: 500 }}
+  >
+    <SalesByPlan />
+  </div>
+  <div
+    class="card sm:col-span-1"
+    transition:fly|local={{ x: -200, duration: 500 }}
+  >
+    <OsBreakdown />
+  </div>
+  <div
+    class="card sm:col-span-1 xl:col-span-2"
+    transition:fly|local={{ y: 200, duration: 500 }}
+  >
     <ContributorsTable />
   </div>
-  <div class="sm:col-span-1 sm:flex sm:flex-col sm:gap-4">
+  <div
+    class="sm:col-span-1 sm:flex sm:flex-col sm:gap-4"
+    transition:fly|local={{ y: -200, duration: 500 }}
+  >
     <StatsCard
       title="32,251"
       subTitle={$t("homepage.conversersions.card")}
@@ -56,7 +97,10 @@
       color="secondary"
     />
   </div>
-  <div class="card sm:col-span-1 xl:col-span-2">
+  <div
+    class="card sm:col-span-1 xl:col-span-2"
+    transition:fly|local={{ y: -200, duration: 500 }}
+  >
     <AnalyticsConversionRates />
   </div>
 </div>

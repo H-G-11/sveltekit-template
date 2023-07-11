@@ -1,10 +1,6 @@
 <script>
-  import { flip } from "svelte/animate";
-  import OverlayCard from "$lib/components/Card/OverlayCard.svelte";
-
   import background1 from "$lib/assets/backgrounds/background-1.jpg";
   import background2 from "$lib/assets/backgrounds/background-2.jpg";
-  import background3 from "$lib/assets/backgrounds/background-3.jpg";
   import background4 from "$lib/assets/backgrounds/background-4.jpg";
   import CustomCard from "$lib/components/Card/CustomCard.svelte";
 
@@ -28,7 +24,6 @@
       backgroundRef: background4,
     },
   ];
-  let seenList = [];
 </script>
 
 <div class="stack h-full">
