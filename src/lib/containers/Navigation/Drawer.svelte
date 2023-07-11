@@ -25,7 +25,7 @@
   <div class="drawer-content">
     <div
       class="
-    sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur transition-all duration-100
+    sticky top-0 z-30 flex h-16 w-full justify-center backdrop-blur
     text-base-content
     "
     >
@@ -37,22 +37,13 @@
       <slot name="content" />
     </div>
   </div>
-  <div
-    class="drawer-side z-40"
-    style="scroll-behavior: smooth; scroll-padding-top: 5rem;"
-  >
+  <div class="drawer-side z-40">
     <label for="drawer" class="drawer-overlay" />
     <aside class="w-80 flex flex-col h-full bg-base-100">
       <div
         class="sticky top-0 z-20 hidden items-center gap-2 px-4 py-2 backdrop-blur lg:flex"
       >
-        <a
-          href="/"
-          aria-current="page"
-          aria-label="Homepage"
-          class="flex-0 btn btn-ghost px-2"
-          on:click={handleClickHome}
-        >
+        <a href="/" class="btn btn-ghost px-2" on:click={handleClickHome}>
           <Title />
         </a>
       </div>
@@ -62,10 +53,7 @@
           <h1>{$t("navbar.app")}</h1>
         </li>
         <li>
-          <a
-            href="/dashboard"
-            data-sveltekit-preload-data="hover"
-            class="px-4 py-2"
+          <a href="/dashboard" class="px-4 py-2"
             ><span>
               <Dashboard />
             </span>
@@ -73,7 +61,7 @@
           >
         </li>
         <li>
-          <a href="/user" data-sveltekit-preload-data="hover" class="px-4 py-2"
+          <a href="/user" class="px-4 py-2"
             ><span>
               <UserDrawer />
             </span>
@@ -81,7 +69,7 @@
           >
         </li>
         <li>
-          <a href="/chat" data-sveltekit-preload-data="hover" class="px-4 py-2"
+          <a href="/chat" class="px-4 py-2"
             ><span>
               <Chat />
             </span>
@@ -89,10 +77,7 @@
           >
         </li>
         <li>
-          <a
-            href="/settings"
-            data-sveltekit-preload-data="hover"
-            class="px-4 py-2"
+          <a href="/settings" class="px-4 py-2"
             ><span>
               <Settings />
             </span>
@@ -100,10 +85,7 @@
           >
         </li>
         <li>
-          <a
-            href="/this-page-does-not-exist"
-            data-sveltekit-preload-data="hover"
-            class="px-4 py-2"
+          <a href="/this-page-does-not-exist" class="px-4 py-2"
             ><span>
               <Icon404 />
             </span>
@@ -114,10 +96,7 @@
           <h1>{$t("navbar.howToUse")}</h1>
         </li>
         <li>
-          <a
-            href="/install"
-            data-sveltekit-preload-data="hover"
-            class="px-4 py-2"
+          <a href="/install" class="px-4 py-2"
             ><span>
               <Install />
             </span>
@@ -125,10 +104,7 @@
           >
         </li>
         <li>
-          <a
-            href="/techstack"
-            data-sveltekit-preload-data="hover"
-            class="px-4 py-2"
+          <a href="/techstack" class="px-4 py-2"
             ><span>
               <Robot />
             </span>
@@ -136,7 +112,7 @@
           >
         </li>
         <li>
-          <a href="/adapt" data-sveltekit-preload-data="hover" class="px-4 py-2"
+          <a href="/adapt" class="px-4 py-2"
             ><span>
               <Pen />
             </span>

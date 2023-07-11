@@ -1,5 +1,5 @@
 <div
-  class="text-primary font-title font-[1000] inline-flex text-lg transition-all duration-200 md:text-3xl"
+  class="text-primary font-title font-[1000] inline-flex text-lg md:text-3xl"
 >
   <span class=" uppercase text-primary">fast</span>
   &nbsp;
