@@ -11,8 +11,11 @@
     <p>Fast App - use without limits</p>
   </div>
   <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-    <a href="#top"><Github /></a>
-    <a href="#top"><Youtube /></a>
-    <a href="#top"><Medium /></a>
+    <a
+      href="https://github.com/HuguesGallier/sveltekit-template"
+      aria-label="Link To GitHub"><Github /></a
+    >
+    <a href="#top" aria-label="Link To YouTube"><Youtube /></a>
+    <a href="#top" aria-label="Link To Medium"><Medium /></a>
   </div>
 </footer>
